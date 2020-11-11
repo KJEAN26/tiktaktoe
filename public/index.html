@@ -13,7 +13,7 @@
 </head>
 <style>
     body{
-        background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(./src/img/background.jpg);
+        background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(background.jpg);
         background-repeat:no-repeat;
         background-size: cover;
     }
@@ -104,7 +104,7 @@
                 let boxClicked = event.target.getAttribute('id');
                 if (counter % 2 == 0) {
                     var x_img = document.createElement("img")
-                    x_img.setAttribute("src", "./src/img/x.jpeg");
+                    x_img.setAttribute("src", "x.jpeg");
                     x_img.setAttribute("width", "100");
                     x_img.setAttribute("height", "100");
                     event.target.appendChild(x_img)
@@ -112,7 +112,7 @@
                     toggleTurn('block', 'none')
                 } else {
                     var o_img = document.createElement("img")
-                    o_img.setAttribute("src", "./src/img/o.jpeg");
+                    o_img.setAttribute("src", "o.jpeg");
                     o_img.setAttribute("width", "100");
                     o_img.setAttribute("height", "100");
                     event.target.appendChild(o_img)
